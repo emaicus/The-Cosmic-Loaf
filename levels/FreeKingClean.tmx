@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1" orientation="orthogonal" width="50" height="50" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="testSheet" tilewidth="32" tileheight="32">
+  <image source="testSheet.png" width="512" height="64"/>
+  <tile id="9">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Tile Layer 1" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2XOxLDMAhEXesGuf9F3WYyQVms5ZfZYjsZeAYEWtd1rTe9hmpy7OKQJEmao7VRxlnUHsJxetbiYPufzOHJa2cO9Ky35jtzeOw87XPUZhYH+g2zP6I4vP47c7Dseu+rCI7d9/80PzLnuSRFCOndXa2fzv6ofZc141C+iPuKeVdasz+ag7WvVXJ4bXlrb5fzKfnwcLD6PKI/fv2vk7cL4m86B2LnKau1X2VxsOag9kRJkjKEvk2r4/wWqxV713uyWzwnHGzWinzt/HzGgsz2qrqz/LB26A4c7PxGc1S+LzNy4om9msGKp1MPS7W6Aacq4ycQJwAA
+  </data>
+ </layer>
+</map>

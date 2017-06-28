@@ -1,0 +1,10 @@
+Size:1
+xDimension:1
+yDimension:1
+
+<Sprite>
+fem_protag
+<Faces>
+Neutral:res/headshots/Fletcher_Neutral.png
+</Faces>
+</Sprite>

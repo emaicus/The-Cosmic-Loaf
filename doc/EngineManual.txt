@@ -1,0 +1,77 @@
+The Loaf of Life User Manual:
+authors: Evan Maicus,
+
+Try to keep entries in alphabetical order and user friendly!
+
+*****Animation*****
+
+Animations are stored within the Art component under a hashmap which maps from the enum AnimationType
+to Slick2D Animations. 
+
+*****Camera*****
+
+A Camera object is used to follow a specific entity through the game world. Camera's are given a target, which
+	they follow, and which can be switched from entity to entity. Any Game should have 2 Cameras, one which 
+	updates (a gameCamera) and another which does not (a menuCamera). The camera which updates should be
+	passed into the render method with any objects that are not static in the game world (e.g. a tree)
+	and the non-updating camera with entities that are static (e.g. the GUI).
+ 
+*****GUI Element Creation:*****
+
+A GUI object is simply an Entity with the Position and GuiDataComponent Components.
+	The GuiDataComponent holds
+	int data: the data to appear on the screen.
+	int DataType: dataType must correlate to an entry in the Enum GUIElementTypes. 
+	
+	Within the GUI class, you must add lines in the update method which tests your DataType and updates values
+	when needed. For example, the PLAYER_BOX_COORD updates every tick based on the player's position.
+	
+*****Save/Load Element:*****
+
+	To add a Save/Load Element, you must modify the saveFile Class.
+	
+	1) Add new fields in the Save File Class to store your data. Add getters and setters. 
+	
+	2) Within the writeOutFile method, append an additional piece(s) of data to the String being written out 
+	by the bufferedWriter.
+	
+	3) Within the readInFile method, add an additional readLine statement(s) correlating to your written value(s)
+	and parse it accordingly.
+	
+	4) The read information will be stored in the game's SaveFile should the button load be clicked in the 
+	Main menu. It is up to you to use your new data within the LevelLoader. For example, in the loadPlayer
+	Method, if the game has been loaded, position is loaded into a coordinate and used during player initialization.
+
+
+*****Menu Creation*****
+
+A menu is made up of an ArrayList of entities containing the ButtonComponent Component. Create this ArrayList within
+the TheCosmicLoafGame class as a class variable. Menu buttons are initialized in the Asset Class on startup.
+Put a call to assets.loadYourMenu() in TheCosmicLoafGame's constructor.
+
+Buttons must have the following three components:
+Art- this art represents a button icon. To avoid having an icon, pass in a piece of art that is transparent.
+Position - the position at which the button is to be rendered.
+ButtonComponent - This component contains 
+	1) int button Code - button Codes must be specified in the ButtonCode Enum. These determine what the button
+	does.
+	2) String ButtonText - The button's descriptor to be shown in game.
+	3) int Attribute - An amount associated with a button. Useful for input/sliders.
+	4/5) ints x and y offset - 2 ints that specify where the text should be rendered in relation to the button.
+	
+Now you need to specify what your buttons do. In the executeButton method of the InputSystem, add an if
+such that if where your button code is being tested. Within it, put the code that should be executed if
+your button is pressed. For example, if a button with the StartGame code is pressed, the game state changes
+and the first level is loaded with a new save file.
+
+Once you have created your buttons, you need to specify how the menu is to be accessed. 
+In the TheCosmicLoafGame class, you must create public final byte representing the state that you're menu
+represents.
+
+Within the input and render methods, add else if statements such that if the game's state is equal to your
+byte, the render and input systems process you're menu.
+
+Now, find the place that you're menu is to be accessed (say from another menu) and add a switch to your state.
+(for example, add a button in the main menu which, when pressed, will switch the game state from main menu
+to your menu.) Always make sure that you can get back/into the game.
+

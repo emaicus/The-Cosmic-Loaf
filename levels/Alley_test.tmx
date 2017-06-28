@@ -1,0 +1,1423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="32" tileheight="32" nextobjectid="13">
+ <tileset firstgid="1" name="Design Spritesheet" tilewidth="32" tileheight="32" tilecount="450" columns="30">
+  <image source="Design Spritesheet.png" width="960" height="480"/>
+  <terraintypes>
+   <terrain name="Base Tiles" tile="-1"/>
+   <terrain name="Blocking Layer" tile="-1"/>
+   <terrain name="Deep Purple" tile="-1"/>
+   <terrain name="Doors" tile="-1"/>
+   <terrain name="Road" tile="-1"/>
+  </terraintypes>
+  <tile id="0" terrain="0,0,0,1">
+   <properties>
+    <property name="collidable" value="section:16,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="1" terrain="0,0,1,1">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="2" terrain="0,0,1,0">
+   <properties>
+    <property name="collidable" value="section:0,16,16,32"/>
+   </properties>
+  </tile>
+  <tile id="3" terrain="1,1,1,0">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="4" terrain="1,1,0,0">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="5" terrain="1,1,0,1">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="collidable" value="section:16,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="collidable" value="section:0,16,16,32"/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="collidable" value="section:16,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="13">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="collidable" value="section:0,16,16,32"/>
+   </properties>
+  </tile>
+  <tile id="16">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="18">
+   <properties>
+    <property name="collidable" value="section:16,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="19">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="20">
+   <properties>
+    <property name="collidable" value="section:0,16,16,32"/>
+   </properties>
+  </tile>
+  <tile id="22">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="collidable" value="section:16,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="25">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="26">
+   <properties>
+    <property name="collidable" value="section:0,16,16,32"/>
+   </properties>
+  </tile>
+  <tile id="28">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="30" terrain="0,1,0,1">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="31" terrain="1,1,1,1">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="32" terrain="1,0,1,0">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="33" terrain="1,0,1,0">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="34" terrain="0,0,0,0"/>
+  <tile id="35" terrain="0,1,0,1">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="36">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="38">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="39">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="41">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="42">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="43">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="44">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="45">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="47">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="48">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="50">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="51">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="53">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="54">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="56">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="57">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="59">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="60" terrain="0,1,0,0">
+   <properties>
+    <property name="collidable" value="section:16,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="61" terrain="1,1,0,0">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="62" terrain="1,0,0,0">
+   <properties>
+    <property name="collidable" value="section:0,16,0,16"/>
+   </properties>
+  </tile>
+  <tile id="63" terrain="1,0,1,1">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="64" terrain="0,0,1,1">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="65" terrain="0,1,1,1">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="66">
+   <properties>
+    <property name="collidable" value="section:16,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="67">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="68">
+   <properties>
+    <property name="collidable" value="section:0,16,0,16"/>
+   </properties>
+  </tile>
+  <tile id="70">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="72">
+   <properties>
+    <property name="collidable" value="section:16,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="73">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="74">
+   <properties>
+    <property name="collidable" value="section:0,16,0,16"/>
+   </properties>
+  </tile>
+  <tile id="76">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="78">
+   <properties>
+    <property name="collidable" value="section:16,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="79">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="80">
+   <properties>
+    <property name="collidable" value="section:0,16,0,16"/>
+   </properties>
+  </tile>
+  <tile id="82">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="84">
+   <properties>
+    <property name="collidable" value="section:16,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="85">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="86">
+   <properties>
+    <property name="collidable" value="section:0,16,0,16"/>
+   </properties>
+  </tile>
+  <tile id="88">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="90" terrain="0,0,0,2">
+   <properties>
+    <property name="collidable" value="section:16,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="91" terrain="0,0,2,2">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="92" terrain="0,0,2,0">
+   <properties>
+    <property name="collidable" value="section:0,16,16,32"/>
+   </properties>
+  </tile>
+  <tile id="93" terrain="2,2,2,0"/>
+  <tile id="94" terrain="2,2,0,0">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="95" terrain="2,2,0,2"/>
+  <tile id="96">
+   <properties>
+    <property name="collidable" value="section:16,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="97">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="98">
+   <properties>
+    <property name="collidable" value="section:0,16,16,32"/>
+   </properties>
+  </tile>
+  <tile id="100">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="102">
+   <properties>
+    <property name="collidable" value="section:16,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="103">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="104">
+   <properties>
+    <property name="collidable" value="section:0,16,16,32"/>
+   </properties>
+  </tile>
+  <tile id="106">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="108">
+   <properties>
+    <property name="collidable" value="section:16,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="109">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="110">
+   <properties>
+    <property name="collidable" value="section:0,16,16,32"/>
+   </properties>
+  </tile>
+  <tile id="112">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="114">
+   <properties>
+    <property name="collidable" value="section:16,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="115">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="116">
+   <properties>
+    <property name="collidable" value="section:0,16,16,32"/>
+   </properties>
+  </tile>
+  <tile id="118">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="120" terrain="0,2,0,2"/>
+  <tile id="121" terrain="2,2,2,2">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="122" terrain="2,0,2,0">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="123" terrain="2,0,2,0">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="124" terrain="0,0,0,0"/>
+  <tile id="125" terrain="0,2,0,2">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="126">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="127">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="128">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="129">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="131">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="132">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="133">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="134">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="135">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="137">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="138">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="140">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="141">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="143">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="144">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="146">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="147">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="149">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="150" terrain="0,2,0,0">
+   <properties>
+    <property name="collidable" value="section:16,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="151" terrain="2,2,0,0">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="152" terrain="2,0,0,0">
+   <properties>
+    <property name="collidable" value="section:0,16,0,16"/>
+   </properties>
+  </tile>
+  <tile id="153" terrain="2,0,2,2"/>
+  <tile id="154" terrain="0,0,2,2">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="155" terrain="0,2,2,2"/>
+  <tile id="156">
+   <properties>
+    <property name="collidable" value="section:16,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="157">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="158">
+   <properties>
+    <property name="collidable" value="section:0,16,0,16"/>
+   </properties>
+  </tile>
+  <tile id="160">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="162">
+   <properties>
+    <property name="collidable" value="section:16,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="163">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="164">
+   <properties>
+    <property name="collidable" value="section:0,16,0,16"/>
+   </properties>
+  </tile>
+  <tile id="166">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="168">
+   <properties>
+    <property name="collidable" value="section,16,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="169">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="170">
+   <properties>
+    <property name="collidable" value="section:0,16,0,16"/>
+   </properties>
+  </tile>
+  <tile id="172">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="174">
+   <properties>
+    <property name="collidable" value="section:16,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="175">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="176">
+   <properties>
+    <property name="collidable" value="section:0,16,0,16"/>
+   </properties>
+  </tile>
+  <tile id="178">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="180" terrain="0,0,0,3">
+   <properties>
+    <property name="collidable" value="section:16,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="181" terrain="0,0,3,3">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="182" terrain="0,0,3,0">
+   <properties>
+    <property name="collidable" value="section:0,16,16,32"/>
+   </properties>
+  </tile>
+  <tile id="183" terrain="3,3,3,0"/>
+  <tile id="184" terrain="3,3,0,0">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="185" terrain="3,3,0,3"/>
+  <tile id="186">
+   <properties>
+    <property name="collidable" value="section:16,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="187">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="188">
+   <properties>
+    <property name="collidable" value="section:0,16,16,32"/>
+   </properties>
+  </tile>
+  <tile id="190">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="192">
+   <properties>
+    <property name="collidable" value="section:16,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="193">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="194">
+   <properties>
+    <property name="collidable" value="section:0,16,16,32"/>
+   </properties>
+  </tile>
+  <tile id="196">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="198" terrain="0,0,0,4"/>
+  <tile id="199" terrain="0,0,4,4"/>
+  <tile id="200" terrain="0,0,4,0"/>
+  <tile id="201" terrain="4,4,4,0"/>
+  <tile id="202" terrain="4,4,0,0"/>
+  <tile id="203" terrain="4,4,0,4"/>
+  <tile id="204">
+   <properties>
+    <property name="collidable" value="section:16,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="205">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="206">
+   <properties>
+    <property name="collidable" value="section:0,16,16,32"/>
+   </properties>
+  </tile>
+  <tile id="208">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="210" terrain="0,3,0,3">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="211" terrain="3,3,3,3">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="212" terrain="3,0,3,0">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="213" terrain="3,0,3,0">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="214" terrain="0,0,0,0"/>
+  <tile id="215" terrain="0,3,0,3">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="216">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="218">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="219">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="221">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="222">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="224">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="225">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="228" terrain="0,4,0,4"/>
+  <tile id="229" terrain="4,4,4,4"/>
+  <tile id="230" terrain="4,0,4,0"/>
+  <tile id="231" terrain="4,0,4,0"/>
+  <tile id="232" terrain="0,0,0,0"/>
+  <tile id="233" terrain="0,4,0,4"/>
+  <tile id="234">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="236">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="237">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="239">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="240" terrain="0,3,0,0">
+   <properties>
+    <property name="collidable" value="section:16,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="241" terrain="3,3,0,0">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="242" terrain="3,0,0,0">
+   <properties>
+    <property name="collidable" value="section:0,16,0,16"/>
+   </properties>
+  </tile>
+  <tile id="243" terrain="3,0,3,3"/>
+  <tile id="244" terrain="0,0,3,3">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="245" terrain="0,3,3,3"/>
+  <tile id="246">
+   <properties>
+    <property name="collidable" value="section:16,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="247">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="248">
+   <properties>
+    <property name="collidable" value="section:0,16,0,16"/>
+   </properties>
+  </tile>
+  <tile id="250">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="252">
+   <properties>
+    <property name="collidable" value="section:16,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="253">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="254">
+   <properties>
+    <property name="collidable" value="section:0,16,0,16"/>
+   </properties>
+  </tile>
+  <tile id="256">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="258" terrain="0,4,0,0"/>
+  <tile id="259" terrain="4,4,0,0"/>
+  <tile id="260" terrain="4,0,0,0"/>
+  <tile id="261" terrain="4,0,4,4"/>
+  <tile id="262" terrain="0,0,4,4"/>
+  <tile id="263" terrain="0,4,4,4"/>
+  <tile id="264">
+   <properties>
+    <property name="collidable" value="section:16,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="265">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="266">
+   <properties>
+    <property name="collidable" value="section:0,16,0,16"/>
+   </properties>
+  </tile>
+  <tile id="268">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="270">
+   <properties>
+    <property name="collidable" value="section:16,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="271">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="272">
+   <properties>
+    <property name="collidable" value="section:0,16,16,32"/>
+   </properties>
+  </tile>
+  <tile id="274">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="276">
+   <properties>
+    <property name="collidable" value="section:16,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="277">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="278">
+   <properties>
+    <property name="collidable" value="section:0,16,16,32"/>
+   </properties>
+  </tile>
+  <tile id="280">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="282">
+   <properties>
+    <property name="collidable" value="section:16,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="283">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="284">
+   <properties>
+    <property name="collidable" value="section:0,16,16,32"/>
+   </properties>
+  </tile>
+  <tile id="286">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="288">
+   <properties>
+    <property name="collidable" value="section:16,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="289">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="290">
+   <properties>
+    <property name="collidable" value="section:0,16,16,32"/>
+   </properties>
+  </tile>
+  <tile id="292">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="294">
+   <properties>
+    <property name="collidable" value="section:16,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="295">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="296">
+   <properties>
+    <property name="collidable" value="section:0,16,16,32"/>
+   </properties>
+  </tile>
+  <tile id="298">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="300">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="302">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="303">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="305">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="306">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="308">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="309">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="311">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="312">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="314">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="315">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="317">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="318">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="320">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="321">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="323">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="324">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="326">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="327">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="329">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="330">
+   <properties>
+    <property name="collidable" value="section:16,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="331">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="332">
+   <properties>
+    <property name="collidable" value="section:0,16,0,16"/>
+   </properties>
+  </tile>
+  <tile id="334">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="336">
+   <properties>
+    <property name="collidable" value="section,16,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="337">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="338">
+   <properties>
+    <property name="collidable" value="section:0,16,0,16"/>
+   </properties>
+  </tile>
+  <tile id="340">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="342">
+   <properties>
+    <property name="collidable" value="section:16,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="343">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="344">
+   <properties>
+    <property name="collidable" value="section:0,16,0,16"/>
+   </properties>
+  </tile>
+  <tile id="346">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="348">
+   <properties>
+    <property name="collidable" value="section:16,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="349">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="350">
+   <properties>
+    <property name="collidable" value="section:0,16,0,16"/>
+   </properties>
+  </tile>
+  <tile id="352">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="354">
+   <properties>
+    <property name="collidable" value="section:16,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="355">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="356">
+   <properties>
+    <property name="collidable" value="section:0,16,0,16"/>
+   </properties>
+  </tile>
+  <tile id="358">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="360">
+   <properties>
+    <property name="collidable" value="section:16,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="361">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="362">
+   <properties>
+    <property name="collidable" value="section:0,16,16,32"/>
+   </properties>
+  </tile>
+  <tile id="364">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="366">
+   <properties>
+    <property name="collidable" value="section:16,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="367">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="368">
+   <properties>
+    <property name="collidable" value="section:0,16,16,32"/>
+   </properties>
+  </tile>
+  <tile id="370">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="372">
+   <properties>
+    <property name="collidable" value="section:16,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="373">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="374">
+   <properties>
+    <property name="collidable" value="section:0,16,16,32"/>
+   </properties>
+  </tile>
+  <tile id="376">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="390">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="392">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="393">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="395">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="396">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="398">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="399">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="401">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="402">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="404">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="405">
+   <properties>
+    <property name="collidable" value="section:0,16,0,32"/>
+   </properties>
+  </tile>
+  <tile id="407">
+   <properties>
+    <property name="collidable" value="section:16,32,0,32"/>
+   </properties>
+  </tile>
+  <tile id="420">
+   <properties>
+    <property name="collidable" value="section:16,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="421">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="422">
+   <properties>
+    <property name="collidable" value="section:0,16,0,16"/>
+   </properties>
+  </tile>
+  <tile id="424">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="426">
+   <properties>
+    <property name="collidable" value="section:16,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="427">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="428">
+   <properties>
+    <property name="collidable" value="section:0,16,0,16"/>
+   </properties>
+  </tile>
+  <tile id="430">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+  <tile id="432">
+   <properties>
+    <property name="collidable" value="section:16,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="433">
+   <properties>
+    <property name="collidable" value="section:0,32,0,16"/>
+   </properties>
+  </tile>
+  <tile id="434">
+   <properties>
+    <property name="collidable" value="section:0,16,0,16"/>
+   </properties>
+  </tile>
+  <tile id="436">
+   <properties>
+    <property name="collidable" value="section:0,32,16,32"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Tile Layer 1" width="100" height="100" offsetx="-244" offsety="-51.0303">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3a327aMBTHcbO27DHKCtoVrwBt91iTkHbFq+1Pbyv1djeb1D3FfBQf9ejgOAXFxN2+Uj8imBPb6a+JIXQRQlgAAAAAAAAAAAAAAAAAAAAAAJp3GW2dK2NrHreuXc0bOI5/xU30FD0nsr2MdqZt6Wqe0+u79NqqgeOoaZ2co07zuG5gLjXrTiV975PSOGPVSR7yN57L49xzqVV3Ku3/c9I3zph1kodcf3weU8ylRp2SddKve6X1z/ffN87YdR9Ctw6sKo4xZZ1mcRu667Kuj0/puOVxk8kk178dp1adrh+rimNMUWfXlRvzu7dsLv760Ne/qlWXOz+mmstYdetwmMfX6P2s8y1ufz8ijy/J0FzGqNM8rk/Yt8W6dTjMQ47xT/TbmM+6TFrMw7/fbfH3PHYePhP/GWqKY5N1bmnMj9i31Tqfx8fQreW/wmEeNhNZ0+39B13/N65tl2kbq+7W5bE507i2bvmKumPabBaPKQ8ZJ3d+2Ezs2qL0uW/XNrvP0P65+r6++/Z5zRz82KXxS/Mp9en7K83VZmHz6Ds/UJfNQvPYkcdkHsPxefyIHqLL2aGH8KLU5l8r9eX78G26nRurNB/7vG/MvsfcfErzGHpdHzWHn4nkcVHIQ7K4ivvFn3CfvEv7yHVu9p+1LUfuz+exCN373VwemoX/PCxafO/4luqUv15Jm+Th31/ZLHL3t1s/3tbrVC4PuV9y4a7lmoUqnR851JXrSuT80PsiO7Ot18vcd5z7wph76gbrSu5Ct77Y+4c2G1mHPrl93sJ3CS3XDbkLL2v/veOz6Bu7b0zq6n5nnht7aEzqzqf1/9VovQ4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANT1Fyhw0ctAnAAA
+  </data>
+ </layer>
+ <objectgroup name="Object Layer 1" offsetx="-244" offsety="-52">
+  <object id="4" x="1442.78" y="1130" width="27.228" height="26.3636">
+   <properties>
+    <property name="Art" value="dummy"/>
+    <property name="collidable" value="true"/>
+   </properties>
+  </object>
+  <object id="8" x="1920.45" y="964.318" width="24.5455" height="23.7273"/>
+  <object id="9" x="3055.44" y="1349.03" width="16.5749" height="52.303"/>
+  <object id="11" name="Spawn" x="132.167" y="1364.36" width="25.3333" height="23.9515">
+   <properties>
+    <property name="playerStart" value="true"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

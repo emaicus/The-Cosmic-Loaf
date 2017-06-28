@@ -1,0 +1,43 @@
+<Dialog Tree>
+fletcher_grim_1
+	<Dialog Chain>
+		<Dialog>
+			Ask about the road
+			Neutral
+			dialog/voices/level1/initiator1.wav
+			Any news from the road?
+			Neutral
+			dialog/voices/level1/pierre2.wav
+			Only mad men travel the roads these days, I stayed off them.
+		</Dialog>
+		<Dialog>
+			Ask about the road
+			Neutral
+			dialog/voices/level1/initiator1.wav
+			Any news from the road?
+			Neutral
+			dialog/voices/level1/pierre2.wav
+			Only mad men travel the roads these days, I stayed off them.
+		</Dialog>
+		<Dialog>
+			Ask about the road
+			Neutral
+			dialog/voices/level1/initiator1.wav
+			Any news from the road?
+			Neutral
+			dialog/voices/level1/pierre2.wav
+			Only mad men travel the roads these days, I stayed off them.
+		</Dialog>
+	</Dialog Chain>
+		<Dialog Chain>
+		<Dialog>
+			Ask about the road
+			Neutral
+			dialog/voices/level1/initiator1.wav
+			Any news from the road?
+			Neutral
+			dialog/voices/level1/pierre2.wav
+			Only mad men travel the roads these days, I stayed off them.
+		</Dialog>
+	</Dialog Chain>
+</Dialog Tree>

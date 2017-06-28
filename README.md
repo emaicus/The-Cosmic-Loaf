@@ -1,2 +1,2 @@
-# The-Cosmic-Loaf
-Java Video Game Engine Developed by the Skidmore Video Game Development Club
+# CosmicLoaf
+Cosmic loaf is a 2D story driven game base one a fictional universe.

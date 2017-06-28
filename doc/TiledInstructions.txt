@@ -1,0 +1,68 @@
+Please note, at present, an object layer rectangle should only be in one box at a time. We're working on it!
+
+playerStart 
+	Use - object layer.
+	Defines player starting location 
+	Accepted Value - "true"
+
+collidable - 
+	Use - object or tile layer.
+	Determines whether or not a tile/entity can be bumped into.
+	Accepted Value - "true"
+	
+Art
+	Use - object layer.
+	Determines which art a generated Entity is supposed to have.
+	Accepted Value - "talker"
+	NOTE: for now, this feature only accepts "talker," which places a static npc sprite.
+	
+interaction
+	Use - object or tile layer
+	Determines what type of interaction an entity is capable of.
+	Accepted Values Readable sign- read~{line@}line
+	Example: read~you are reading this@this is the second thing on the sign@This engine is wicked intuitive!
+	Accepted Values Single Entity Dialog - talk~{audioFilePath.extension#EmotionType#Prompt#Subtitles@}
+	Example: talk~pierre1.wav#neutral#Hate Newspapers#I HATE NEWSPAPERS@pierre2.wav#neutral#Scream at the sky#Ahhhhhh
+	Accepted Values Two Entity Dialog - {talk2~initiatordialog.wav#initiator emotion#initiator subs#responderdialog.wav#responder emotion#prompt#responder subtitles@}
+	Example: talk2~fletcher1.wav#angry#Will you shut up?#boyWithDog1.wav#happy#Tell the boy to go away#I dont know how to shut up!
+	Sorry that this takes so long. :(
+	
+health
+	Use - object layer 
+	NOTE: working on adding destruction for tile layers. The problem at the moment is that "killing" a terrain results in a black void.
+	Determines whether or not an entity has health, if it is invulnerable, and how much health it has.
+	Accepted Value - booleanInvulnerable,HealthAmt
+	Example: true,5
+	The above results in an invulnerable entity with 5 health.
+
+
+TRIGGERS:
+NOTE: Lets keep triggers to one type; the engine isn't complete enough yet to allow a trigger to start on, say, one death, 
+two activations, and an entry. Ask if you need this prioritized. Thanks!
+
+triggeringEntity 
+	Use - Object Layer
+	States that this entity causes a named trigger to go off.
+	Accepted value - 
+	triggerName@("active" | anythingElse)@("startOnDeath" | "startOnConversation"@dialogNumberStartingAtZero | "startOnActivation")
+	Example - trigger1@active@startOnDeath 
+	The above says that trigger1 (whatever that is) is a trigger that goes off after this entity dies.
+
+NOTE: I won't let a terrain square start on death. Please instead define the desired entity in the object layer. Thanks!
+
+NOT YET SUPPORTED
+triggeringSquare -
+	Use - object layer (put it on a non collidable, non moving spot).
+	Says that this square causes a trigger to go off.
+	Accepted value - triggerName@("active" | anythingElse)@("startOnEntry" | "startOnExit")
+	Example - trigger2@active@startOnEntry
+	The above says that trigger2 goes off when an entity walks onto this tile.
+WE'RE WORKING ON IT!
+
+affectedEntity- 	
+	Use Object or Terrain Layer
+	Says that this object or terrain is affected by a named trigger.
+	Accepted value - triggerName@harmsBoolean@healsBoolean@amount@activatesBoolean@("spawns" | "despawns")@executesScriptsBoolean@scriptName
+	Example - trigger1@false,false,0,false,spawns,false,none
+	The above (very nasty to read) trigger says that, when trigger one goes off, this entity will spawn. So, based on the example
+	in triggeringEntity above, when that entity is killed, this entity will spawn. Wow, how marvelous are triggers.?
